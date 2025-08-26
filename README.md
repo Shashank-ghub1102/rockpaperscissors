@@ -11,12 +11,12 @@ def rock_paper_scissors():
         player = input("Choose Rock, Paper, or Scissors (or type 'quit' to stop): ").lower()
         
         if player == "quit":
-            print("👋 Thanks for playing!")
+            print(" Thanks for playing!")
             print(f"Final Score → You: {player_score}, Computer: {computer_score}")
             break
         
         if player not in options:
-            print("⚠️ Invalid choice. Try again.")
+            print("⚠ Invalid choice. Try again.")
             continue
         
         computer = random.choice(options)
@@ -27,10 +27,10 @@ def rock_paper_scissors():
         elif (player == "rock" and computer == "scissors") or \
              (player == "scissors" and computer == "paper") or \
              (player == "paper" and computer == "rock"):
-            print("🎉 You win this round!")
+            print(" You win this round!")
             player_score += 1
         else:
-            print("😢 Computer wins this round!")
+            print(" Computer wins this round!")
             computer_score += 1
         
         print(f"Score → You: {player_score}, Computer: {computer_score}\n")
